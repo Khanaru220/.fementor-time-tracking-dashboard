@@ -1,6 +1,10 @@
 # Frontend Mentor - Time tracking dashboard
 
-![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
+
+
+https://user-images.githubusercontent.com/74447462/148667583-918644cb-061f-437a-9093-80115d5dadae.mp4
+
+**Music credit**: North Oakland Extasy - Squadda B
 
 ## Welcome! 👋
 
