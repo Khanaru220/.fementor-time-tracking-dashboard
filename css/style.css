@@ -218,6 +218,10 @@ figure,
 }
 
 /* ------HIDE DEFAULT TEXT */
-body :not(.container):not(.container *) {
+/* body :not(.container):not(.container *) {
 	display: none;
+} */
+
+.attribution {
+	margin-top: 4rem;
 }
