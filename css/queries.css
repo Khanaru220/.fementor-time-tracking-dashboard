@@ -1,0 +1,73 @@
+/* 
+## Layout
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px 
+
+1em = 16px
+
+*/
+
+/* ----- */
+
+/* 1em = 16px */
+
+@media (max-width: 40em) {
+	html {
+		font-size: 40%;
+	}
+
+	body {
+		justify-content: flex-start;
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+
+	:root {
+		--padding-board: 3rem;
+	}
+
+	.block {
+		display: inline;
+	}
+
+	.container {
+		min-width: 45vw;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto;
+	}
+
+	/* ----- figure_01 */
+	.board-personal {
+		grid-row: span 1;
+	}
+
+	.board-info {
+		flex-direction: row;
+	}
+	.board-info--text {
+		gap: 0;
+	}
+	.board-info--name {
+		font-size: 2.8rem;
+	}
+
+	.board-day-option {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	/*  figure_01 ----- */
+
+	/* ------- 6 figures */
+
+	.board-time-container {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	/*  6 figures ------- */
+}

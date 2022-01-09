@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+/* # Front-end Style Guide
+
+
+## Colors
+
+### Primary
+
+- Blue: hsl(246, 80%, 60%)
+
+- Light red (work): hsl(15, 100%, 70%)
+- Soft blue (play): hsl(195, 74%, 62%)
+- Light red (study): hsl(348, 100%, 68%)
+- Lime green (exercise): hsl(145, 58%, 55%)
+- Violet (social): hsl(264, 64%, 52%)
+- Soft orange (self care): hsl(43, 84%, 65%)
+
+### Neutral
+
+- Very dark blue: hsl(226, 43%, 10%)
+- Dark blue: hsl(235, 46%, 20%)
+- Desaturated blue: hsl(235, 45%, 61%)
+- Pale Blue: hsl(236, 100%, 87%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px (card titles e.g. Work, Play)
+
+### Font
+
+- Family: [Rubik](https://fonts.google.com/specimen/Rubik)
+- Weights: 300, 400, 500 */
+/* ----------------------------------------------- */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 100vh;
+	font-size: 1.8rem;
+	background-color: var(--very-dark-blue);
+	color: var(--white);
+	font-family: Rubik, sans-serif;
+	font-weight: 400;
+}
+
+:root {
+	--padding-board: 2rem;
+	--board-radius: 1.4rem;
+
+	--white: #fff;
+	--blue: hsl(246, 80%, 60%);
+	--light-orange: hsl(15, 100%, 70%);
+	--soft-blue: hsl(195, 74%, 62%);
+	--light-red: hsl(348, 100%, 68%);
+	--lime-greene: hsl(145, 58%, 55%);
+	--violet: hsl(264, 64%, 52%);
+	--soft-orangere: hsl(43, 84%, 65%);
+	--very-dark-blue: hsl(226, 43%, 10%);
+	--dark-blue: hsl(235, 46%, 20%);
+	--semi-blue: hsl(235, 27%, 35%);
+	--desaturated-blue: hsl(235, 45%, 61%);
+	--pale-blue: hsl(236, 100%, 87%);
+}
+
+/* ---------- */
+.container {
+	padding: 0 2rem;
+	/* don't know why min-width work smoothly with my padding */
+	min-width: 80vw;
+}
+
+figure {
+	position: relative;
+	overflow: hidden;
+}
+
+.block {
+	/* create [newline] effect */
+	display: block;
+}
+
+/* ----- GRID SETTING */
+
+.grid {
+	display: grid;
+	gap: 2rem;
+}
+
+.grid--4-col {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--2-row {
+	grid-template-rows: repeat(2, 1fr);
+}
+
+/* ---- ACTIVE STATE */
+
+.active-text {
+	color: var(--white);
+}
+
+.active-board {
+	background-color: var(--desaturated-blue);
+}
+
+.active-control-icon {
+	/* make icon WHITE */
+	filter: brightness(3) contrast(3);
+}
+
+.active-control-icon-holder {
+	background-color: var(--semi-blue);
+}

@@ -1,0 +1,223 @@
+/* ------------ Figure_01 ------------ */
+
+.board-info {
+	background-color: var(--blue);
+}
+
+figure:nth-of-type(1)::after {
+	background-color: var(--dark-blue);
+}
+figure:nth-of-type(1)::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: -30%;
+	left: 0;
+
+	z-index: -999;
+}
+/* ------- board-personal */
+.board-personal {
+	display: flex;
+	flex-direction: column;
+	grid-row: span 2;
+}
+
+.img-personal {
+	height: 7rem;
+	border: 2px solid var(--white);
+	border-radius: 50%;
+}
+
+.board-info {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 2rem;
+
+	background-color: var(--blue);
+	flex: 3;
+}
+
+.board-info--text {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.board-info--text {
+	font-weight: 300;
+}
+.board-info--small {
+	font-size: 1.4rem;
+	color: var(--pale-blue);
+}
+.board-info--name {
+	font-size: 3.4rem;
+}
+/*  board-personal ------- */
+
+.board-day-option {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1rem;
+	font-size: 1.6rem;
+
+	color: var(--desaturated-blue);
+}
+
+.board-day-option > * {
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.board-day-option > *:hover {
+	color: var(--white);
+}
+
+/* ------------ 6 Figure ------------ */
+
+.board-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-top: 4rem;
+
+	position: relative;
+}
+
+/* --- make background-behind */
+
+figure:nth-of-type(2)::after {
+	background-color: var(--light-orange);
+}
+
+figure:nth-of-type(3)::after {
+	background-color: var(--soft-blue);
+}
+figure:nth-of-type(4)::after {
+	background-color: var(--light-red);
+}
+figure:nth-of-type(5)::after {
+	background-color: var(--lime-greene);
+}
+figure:nth-of-type(6)::after {
+	background-color: var(--violet);
+}
+figure:nth-of-type(7)::after {
+	background-color: var(--soft-orangere);
+}
+
+figure:nth-of-type(2)::after,
+figure:nth-of-type(3)::after,
+figure:nth-of-type(4)::after,
+figure:nth-of-type(5)::after,
+figure:nth-of-type(6)::after,
+figure:nth-of-type(7)::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: -6rem;
+	left: 0;
+}
+
+.icon {
+	z-index: 999;
+	position: absolute;
+	right: 0;
+	top: -1rem;
+	width: 6rem;
+	filter: brightness(0) opacity(0.3);
+}
+
+/*  make background-behind --- */
+
+.board {
+	background-color: var(--dark-blue);
+	transition: all 0.3s;
+	cursor: pointer;
+	z-index: 999;
+}
+
+.board * * {
+	/* remove cursor:pointer on children */
+	cursor: auto;
+}
+
+/* ---- board-control */
+.board-control {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 2rem;
+}
+
+.board-control > :first-child {
+	font-size: 1.6rem;
+}
+
+.board-control > :last-child {
+	display: flex;
+	align-items: center;
+}
+
+.board-control-icon-holder,
+.board-control-icon-holder * {
+	cursor: pointer;
+}
+
+.board-control-icon-holder {
+	height: 3rem;
+	width: 3rem;
+	border-radius: 50%;
+	padding: 0.5rem;
+	border: 1px solid var(--dark-blue);
+}
+
+.board-control-icon {
+	width: 100%;
+}
+
+/*  board-control  ----*/
+
+/* ------ board-time */
+.board-time-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1rem;
+}
+
+.board-hour {
+	font-size: 4.2rem;
+	font-weight: 300;
+}
+
+.board-history {
+	font-size: 1.2rem;
+	color: var(--pale-blue);
+}
+
+/*  board-time ------ */
+
+/*  -----  add same style */
+
+.board-info,
+.board-day-option,
+.board {
+	padding: var(--padding-board);
+}
+
+.board-info,
+figure,
+.board {
+	border-radius: var(--board-radius);
+}
+
+/* ------HIDE DEFAULT TEXT */
+body :not(.container):not(.container *) {
+	display: none;
+}
