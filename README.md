@@ -32,6 +32,8 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ### Expected behaviour
 
+
+
 - The text for the previous period's time should change based on the active timeframe. For Daily, it should read "Yesterday" e.g "Yesterday - 2hrs". For Weekly, it should read "Last Week" e.g. "Last Week - 32hrs". For monthly, it should read "Last Month" e.g. "Last Month - 19hrs".
 
 ## Where to find everything
@@ -101,3 +103,23 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+
+[x] miss spell flex -> justify-items -> justify-content
+
+[ ] create folder CSS -- contains 3 file (style - general - queries)
+
+[ ] write down task on Trello -- (Todo - Later - Todo)
+
+[ ] add cursor:pointer to parent --> but when hover text we want it back
+	parent {cursor: pointer}
+	parent * {cursor: auto}
+[ ] just add :hover effect to parent, not apply when hover children
+	use JS instead pure CSS
+
+[ ] couple: mouseenter-leave  -- mouseover-out
+
+[ ] load [local-JSON file] on [browser] --> use [fetch]
+
+[ ] we can combine [overflow] for [absolute]. By using [overflow] on its [parent/relative element]
+
+[ ] toggle [new line] by using class [display:block]
